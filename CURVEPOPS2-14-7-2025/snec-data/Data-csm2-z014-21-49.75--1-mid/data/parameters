@@ -1,0 +1,82 @@
+outdir              = "data"
+
+profile_name 		= "/nesi/nobackup/uoa00094/SNEC-z014-guo/profiles-z014-csm/input-csm2-z014-21"
+
+comp_profile_name	= "/nesi/nobackup/uoa00094/SNEC-z014-guo/profiles-z014-csm/input-csm2-comp-z014-21"
+
+
+#__________EXPLOSION_____________
+
+initial_data 		= "Thermal_Bomb"
+
+#Options:
+#"Piston_Explosion"
+#"Thermal_Bomb"
+
+piston_vel          = 5.0d9
+piston_tstart       = 0.0d0
+piston_tend         = 1.0d-2
+final_energy        = 5.62354273726954e+49 
+
+bomb_tstart         = 0.0d0
+bomb_tend           = 0.1d0
+bomb_mass_spread    = 0.1d0 #(in solar mass)
+bomb_start_point    = 1
+
+#_____________GRID_______________
+
+imax         = 1000
+
+gridding = "from_file_by_mass"
+
+#Options:
+#"uniform_by_mass"
+#"from_file_by_mass"
+
+mass_excision = 1
+mass_excised = 4.10950E+00 
+
+#___________EVOLUTION_____________
+
+radiation = 1
+eoskey = 2
+
+#Options:
+#1 - ideal eos
+#2 - Paczynski
+
+Ni_switch = 1
+Ni_mass = 0.1
+Ni_boundary_mass = 10.21975 
+
+Ni_period = 1.0d4
+
+saha_ncomps = 3
+
+boxcar_smoothing = 1
+
+opacity_floor_envelope = 0.01d0
+opacity_floor_core     = 0.24d0
+
+#___________TIMING_______________
+
+ntmax               = 10000000000000
+
+tend                = 20000000.0d0
+
+dtout               = 2.16d4
+dtout_scalar        = 1.7d3
+dtout_check         = 1.7d3
+
+ntout               = -1
+ntout_scalar        = -1
+ntout_check         = -1
+
+ntinfo              = 999
+
+dtmin               = 1.0d-10
+dtmax               = 3.6d3
+
+#____________TEST_________________
+
+sedov 		    = 0

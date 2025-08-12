@@ -1,0 +1,3 @@
+core-z014 = Parameters for progenitor models.
+profiles-z014-csm = SNEC input profile models with CSM included.
+Data-csm2-z014-XX-YY.Y--Z.ZZ-low/mid/max = results of SNEC computations with XX-initial mass, YY.Y-exoplosion energy in ergs, -Z.ZZ log nickel mass, low/mid/max - different amounts of nickel mixing.
